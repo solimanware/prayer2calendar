@@ -1,0 +1,7 @@
+{
+  "name": "prayer2calendar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

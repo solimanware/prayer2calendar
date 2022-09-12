@@ -21,6 +21,7 @@ interface IPrayerEvent {
 })
 export class HomePage {
   prayerTimes: PrayerTimes;
+  todayPrayerTimes: PrayerTimes;
   records = [];
   constructor() {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -29,6 +30,8 @@ export class HomePage {
         position.coords.longitude
       );
       const params = CalculationMethod.MoonsightingCommittee();
+      this.todayPrayerTimes = new PrayerTimes(coordinates, new Date(), params);
+
       const start = new Date('1/1/2022');
       const end = new Date('12/30/2022');
       const myPrayerEvents: IPrayerEvent[] = [];

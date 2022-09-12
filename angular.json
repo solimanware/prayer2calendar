@@ -141,6 +141,9 @@
               "devServerTarget": "app:serve:ci"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

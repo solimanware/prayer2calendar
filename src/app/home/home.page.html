@@ -5,23 +5,27 @@
       <ion-list>
         <ion-item>
           <ion-label> الفجر </ion-label>
-          <ion-label> {{prayerTimes?.fajr | date:'shortTime'}} </ion-label>
+          <ion-label> {{todayPrayerTimes?.fajr | date:'shortTime'}} </ion-label>
         </ion-item>
         <ion-item>
           <ion-label> الظهر </ion-label>
-          <ion-label> {{prayerTimes?.dhuhr | date:'shortTime'}} </ion-label>
+          <ion-label>
+            {{todayPrayerTimes?.dhuhr | date:'shortTime'}}
+          </ion-label>
         </ion-item>
         <ion-item>
           <ion-label> العصر </ion-label>
-          <ion-label> {{prayerTimes?.asr | date:'shortTime'}} </ion-label>
+          <ion-label> {{todayPrayerTimes?.asr | date:'shortTime'}} </ion-label>
         </ion-item>
         <ion-item>
           <ion-label> المغرب </ion-label>
-          <ion-label> {{prayerTimes?.maghrib | date:'shortTime'}} </ion-label>
+          <ion-label>
+            {{todayPrayerTimes?.maghrib | date:'shortTime'}}
+          </ion-label>
         </ion-item>
         <ion-item>
           <ion-label> العشاء </ion-label>
-          <ion-label> {{prayerTimes?.isha | date:'shortTime'}} </ion-label>
+          <ion-label> {{todayPrayerTimes?.isha | date:'shortTime'}} </ion-label>
         </ion-item>
       </ion-list>
     </div>

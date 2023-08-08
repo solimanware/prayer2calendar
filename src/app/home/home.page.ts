@@ -32,8 +32,8 @@ export class HomePage {
       const params = CalculationMethod.MoonsightingCommittee();
       this.todayPrayerTimes = new PrayerTimes(coordinates, new Date(), params);
 
-      const start = new Date('1/1/2022');
-      const end = new Date('12/30/2022');
+      const start = new Date(new Date().getFullYear(), 0, 1);
+      const end = new Date(new Date().getFullYear(), 11, 31);
       const myPrayerEvents: IPrayerEvent[] = [];
       let loop = new Date(start);
       while (loop <= end) {

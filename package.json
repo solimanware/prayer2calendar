@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:prod": "ng build --base-href=/prayer2calendar/",
+    "build:prod": "ionic build --prod -- --base-href=https://solimanware.com/prayer2calendar/",
     "deploy": "npx angular-cli-ghpages --dir=www"
   },
   "private": true,
